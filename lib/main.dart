@@ -15,13 +15,7 @@ class Home extends StatelessWidget {
       appBar: AppBar(
         title: const Text("hoy",style: TextStyle(
           fontSize: 40,
-          fontFamily: 'BeVietnamPro-L'
-
-
-
-
-
-
+            fontFamily: 'BeVietnamPro-L'
         ),),
 
       ),
