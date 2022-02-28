@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # dislearn
 
 DisasLearn Project
@@ -15,3 +16,6 @@ For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 "# app-dev" 
+=======
+# app-dev
+>>>>>>> fefd73c746d91fdcaf4323c828c872c959d4fd11
