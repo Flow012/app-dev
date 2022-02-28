@@ -13,8 +13,19 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        title: const Text("hoy",style: TextStyle(
+          fontSize: 40,
+          fontFamily: 'BeVietnamPro-L'
+
+
+
+
+
+
+        ),),
 
       ),
+      body: Image(image: AssetImage('img/1BE.png')),
     );
   }
 }
