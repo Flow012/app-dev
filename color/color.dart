@@ -8,4 +8,3 @@ LinearGradient mainColor() {
     end: Alignment.centerRight
   );
 }
-//na gets na ring
