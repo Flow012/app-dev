@@ -17,11 +17,6 @@ class Home extends StatelessWidget {
           fontSize: 40,
           fontFamily: 'BeVietnamPro-L'
 
-
-
-
-
-
         ),),
 
       ),
