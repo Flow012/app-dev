@@ -14,35 +14,45 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: SafeArea(
         child: Scaffold(
-          appBar: AppBar(
-            title: const Text('Hello World'),
-            centerTitle: true,
-            backgroundColor: Colors.lightBlue,
-          ),
-          body: Column(
-            children: <Widget>[
-              Container(
-                decoration: const BoxDecoration(
-                  borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(10.0),
-                      topRight: Radius.circular(10.0)),
-                  color: Colors.red,
+          body: Container(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  child: Image.asset("img/1BE.png"),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
                 ),
-                child: const Text('Hello World'),
-                padding: const EdgeInsets.all(100),
-                margin: const EdgeInsets.all(10),
-              ),
-              Container(
-                decoration: const BoxDecoration(
-                  borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(10.0),
-                      topRight: Radius.circular(10.0)),
-                  color: Colors.red,
+                Container(
+                  child: const Text(
+                    "This application will inform them  "
+                    "about how devastating and impactful "
+                    "disaster can be; it gives an idea that"
+                    " we should always be prepared if a natural disaster occurs. This application"
+                    " doesn't teach what are and what is but raises awareness about natural disasters.",
+                    textAlign: TextAlign.left,
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 13,
+                      letterSpacing: 1,
+                      fontFamily: 'Inter-M',
+                      height: 1.5
+                    ),
+                  ),
+                  padding: const EdgeInsets.symmetric(horizontal: 25),
+                  margin: const EdgeInsets.only(top: 15),
                 ),
-                child: const Text('Hello World'),
-                padding: const EdgeInsets.all(20),
-              ),
-            ],
+
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(),
+                  child: const Text("CLICK TO VIEW", style: TextStyle(fontFamily: 'Inter',)
+                  ),
+                  onPressed: () {},
+
+                ),
+              ],
+            ),
+            decoration: const BoxDecoration(color: Colors.redAccent),
           ),
         ),
       ),
