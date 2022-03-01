@@ -1,4 +1,8 @@
+import 'package:dislearn/theme.dart';
 import 'package:flutter/material.dart';
+
+
+
 
 void main() {
   runApp(const MaterialApp(
@@ -13,14 +17,14 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("hoy",style: TextStyle(
+        title:  Text("hoy",style: TextStyle(
           fontSize: 40,
-          fontFamily: 'BeVietnamPro-L'
+          fontFamily: 'BeVietnamPro-L',
+          color: AppTheme.colors.blue_azure,
 
         ),),
 
       ),
-      body: Image(image: AssetImage('img/1BE.png')),
     );
   }
 }
