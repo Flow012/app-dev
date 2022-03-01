@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
                   child: Image.asset("img/LOGO 1.png"),
                   padding:
                       const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-                  margin: const EdgeInsets.symmetric(horizontal: 30),
+                      margin: const EdgeInsets.symmetric(horizontal: 30),
                 ),
                 Container(
                   child: const Text(
