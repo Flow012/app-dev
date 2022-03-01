@@ -43,12 +43,20 @@ class MyApp extends StatelessWidget {
                   margin: const EdgeInsets.only(top: 15),
                 ),
 
-                ElevatedButton(
-                  style: ElevatedButton.styleFrom(),
-                  child: const Text("CLICK TO VIEW", style: TextStyle(fontFamily: 'Inter',)
-                  ),
-                  onPressed: () {},
+                Container(
+                  child: OutlinedButton(
+                    style: OutlinedButton.styleFrom(
+                      primary: Colors.white,
+                      minimumSize: const Size(140, 50),
+                      side: const BorderSide(width: 4, color: Colors.white)
+                    ),
+                    child: const Text("CLICK TO VIEW", style: TextStyle(fontFamily: 'Inter',)
+                    ),
+                    onPressed: () {},
 
+                  ),
+                  padding: const EdgeInsets.all(10),
+                  margin: const EdgeInsets.only(top: 20),
                 ),
               ],
             ),
