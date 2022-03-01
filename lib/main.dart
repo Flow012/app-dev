@@ -19,9 +19,10 @@ class MyApp extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
-                  child: Image.asset("img/1BE.png"),
+                  child: Image.asset("img/LOGO 1.png"),
                   padding:
                       const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                  margin: const EdgeInsets.symmetric(horizontal: 30),
                 ),
                 Container(
                   child: const Text(
@@ -48,7 +49,8 @@ class MyApp extends StatelessWidget {
                     style: OutlinedButton.styleFrom(
                       primary: Colors.white,
                       minimumSize: const Size(140, 50),
-                      side: const BorderSide(width: 4, color: Colors.white)
+                      side: const BorderSide(width: 2, color: Colors.white),
+                      shape: const RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(100)))
                     ),
                     child: const Text("CLICK TO VIEW", style: TextStyle(fontFamily: 'Inter',)
                     ),
@@ -57,6 +59,7 @@ class MyApp extends StatelessWidget {
                   ),
                   padding: const EdgeInsets.all(10),
                   margin: const EdgeInsets.only(top: 20),
+
                 ),
               ],
             ),

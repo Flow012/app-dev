@@ -16,6 +16,9 @@ class Menu extends StatelessWidget {
                 style: TextStyle(fontFamily: 'BeVietnamPro-B', fontSize: 20, color: Colors.black38),
               ),
             ),
+            Divider(
+
+            ),
             Container(
               child: const Card(
                 child: Text(""),
