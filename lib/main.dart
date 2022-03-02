@@ -17,10 +17,11 @@ class Home extends StatelessWidget {
           fontSize: 40,
           fontFamily: 'BeVietnamPro-L'
 
-        ),),
+        ),
+        ),
 
       ),
-      body: Image(image: AssetImage('img/1BE.png')),
+      body: const Image(image: AssetImage('img/1BE.png')),
     );
   }
 }
