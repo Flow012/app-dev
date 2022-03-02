@@ -1,5 +1,9 @@
+import 'package:dislearn/theme.dart';
 import 'package:flutter/material.dart';
 import 'screens/MenuScreen.dart';
+import 'theme.dart';
+
+
 
 
 void main() { runApp( MyApp());
@@ -28,7 +32,7 @@ class MyApp extends StatelessWidget {
 
                     ),
                     Container(
-                      child: const Text(
+                      child:  Text(
                         "This application will inform them  "
                         "about how devastating and impactful "
                         "disaster can be;\nit gives an idea that"
@@ -36,7 +40,7 @@ class MyApp extends StatelessWidget {
                         " doesn't teach what are and\nwhat is but raises awareness about\nnatural disasters.",
                         textAlign: TextAlign.left,
                         style: TextStyle(
-                            color: Colors.white,
+                            color: AppTheme.colors.white,
                             fontSize: 13,
                             letterSpacing: 1,
                             fontFamily: 'Inter-M',
