@@ -1,29 +1,16 @@
-<<<<<<< HEAD
-  import 'package:flutter/material.dart';
-=======
 import 'package:flutter/material.dart';
 import 'screens/MenuScreen.dart';
->>>>>>> 71939e3892c6308fd4a31d095f84d541a536490c
+
 
 void main() { runApp( MyApp());
 }
-//hello
+
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-<<<<<<< HEAD
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text("hoy",
-          style: TextStyle(
-          fontSize: 40,
-          fontFamily: 'BeVietnamPro-L'
-
-        ),),
-=======
     return MaterialApp(
       home: Builder(
         builder: (context) {
@@ -38,7 +25,6 @@ class MyApp extends StatelessWidget {
                       padding:
                           const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
                       margin: const EdgeInsets.symmetric(horizontal: 30),
->>>>>>> 71939e3892c6308fd4a31d095f84d541a536490c
 
                     ),
                     Container(
