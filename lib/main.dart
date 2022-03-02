@@ -11,33 +11,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-<<<<<<< HEAD
-      home: SafeArea(
-        child: Scaffold(
-          body: Container(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Container(
-                  child: Image.asset("img/1BE.png"),
-                  padding:
-                      const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-                ),
-                Container(
-                  child: const Text(
-                    "This application will inform them  "
-                    "about how devastating and impactful "
-                    "disaster can be; it gives an idea that"
-                    " we should always be prepared if a natural disaster occurs. This application"
-                    " doesn't teach what are and whawqt is but raises awareness about natural disasters.",
-                    textAlign: TextAlign.left,
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 13,
-                      letterSpacing: 1,
-                      fontFamily: 'Inter-M',
-                      height: 1.5
-=======
       home: Builder(
         builder: (context) {
           return SafeArea(
@@ -51,7 +24,7 @@ class MyApp extends StatelessWidget {
                       padding:
                           const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
                       margin: const EdgeInsets.symmetric(horizontal: 30),
->>>>>>> MenuChanges
+
                     ),
                     Container(
                       child: const Text(
