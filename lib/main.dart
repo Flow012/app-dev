@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+  import 'package:flutter/material.dart';
 
 void main() {
   runApp(const MaterialApp(
@@ -13,7 +13,8 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("hoy",style: TextStyle(
+        title: const Text("hoy",
+          style: TextStyle(
           fontSize: 40,
           fontFamily: 'BeVietnamPro-L'
 
