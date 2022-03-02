@@ -30,8 +30,8 @@ class MyApp extends StatelessWidget {
                     "about how devastating and impactful "
                     "disaster can be; it gives an idea that"
                     " we should always be prepared if a natural disaster occurs. This application"
-                    " doesn't teach what are and what is but raises awareness about natural disasters.",
-                    textAlign: TextAlign.left,
+                    " doesn't teach what are and whawqt is but raises awareness about natural disasters.",
+                    textAlign: TextAlign.left,ZZzz
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 13,
