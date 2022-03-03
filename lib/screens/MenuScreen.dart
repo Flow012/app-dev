@@ -95,7 +95,6 @@ class Menu extends StatelessWidget {
               padding: EdgeInsets.symmetric(horizontal: 30),
               margin: EdgeInsets.symmetric(vertical: 10),
             ),
-
           ],
         ),
       ),
