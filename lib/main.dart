@@ -69,8 +69,14 @@ class MyApp extends StatelessWidget {
                   ),
                 ],
               ),
-              decoration: const BoxDecoration(color: Colors.redAccent),
+                decoration: const BoxDecoration(
+                    gradient: LinearGradient(
+                        colors: [Color(0xff0D995E), Color(0xff0DC075)],
+                        stops: [0.3, 0.6],
+                        begin: Alignment.bottomLeft,
+                        end: Alignment.topRight))
             ),
+
           ),
         );
       }),

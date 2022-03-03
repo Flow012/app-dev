@@ -1,3 +1,4 @@
+import 'package:dislearn/screens/T1BE.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -8,31 +9,22 @@ class Menu extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-
         //APP BAR HEADER
 
-        appBar:AppBar(
-        title: Image.asset("img/LOGO 1.png",
-        fit: BoxFit.contain,
-          height: 40,
-        ),
+        appBar: AppBar(
+          title: Image.asset(
+            "img/LOGO 1.png",
+            fit: BoxFit.contain,
+            height: 40,
+          ),
           toolbarHeight: 60,
           flexibleSpace: Container(
-            decoration: const BoxDecoration(
-              gradient: LinearGradient(
-                  colors: [
-                  Color(0xff0D995E),
-                  Color(0xff0DC075)
-                  ],
-                stops: [
-                  0.5,
-                  1
-                ],
-                begin: Alignment.bottomLeft,
-                end: Alignment.topRight
-              )
-            )
-          ),
+              decoration: const BoxDecoration(
+                  gradient: LinearGradient(
+                      colors: [Color(0xff0D995E), Color(0xff0DC075)],
+                      stops: [0.5, 1],
+                      begin: Alignment.bottomLeft,
+                      end: Alignment.topRight))),
         ),
         //body CONTENTS
         body: Column(
@@ -48,7 +40,6 @@ class Menu extends StatelessWidget {
               margin: const EdgeInsets.only(top: 10),
             ),
 
-
             const Divider(
               height: 16,
               thickness: 4,
@@ -61,7 +52,10 @@ class Menu extends StatelessWidget {
             Container(
               child: InkWell(
                 splashColor: Colors.green,
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                      context, MaterialPageRoute(builder: (context) => Home()));
+                },
                 child: Ink.image(
                   image: const AssetImage(
                     'img/1BE.png',
