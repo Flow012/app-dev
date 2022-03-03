@@ -8,7 +8,13 @@ class Menu extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(),
+        appBar:AppBar(
+        title: Image.asset("img/LOGO 1.png",
+        fit: BoxFit.contain,
+          height: 40,
+        ),
+          toolbarHeight: 50,
+        ),
         body: Column(
           children: [
             Container(
@@ -19,7 +25,7 @@ class Menu extends StatelessWidget {
                     fontSize: 30,
                     color: Colors.black87),
               ),
-              margin: const EdgeInsets.only(top: 30),
+              margin: const EdgeInsets.only(top: 10),
             ),
             const Divider(
               height: 16,
@@ -38,11 +44,11 @@ class Menu extends StatelessWidget {
                   ),
                   fit: BoxFit.cover,
                   height: 100,
-                  width: 500,
+                  width: 250,
                 ),
               ),
               padding: EdgeInsets.symmetric(horizontal: 30),
-              margin: EdgeInsets.symmetric(vertical: 30),
+              margin: EdgeInsets.symmetric(vertical: 25),
             ),
 
             Container(
@@ -55,7 +61,7 @@ class Menu extends StatelessWidget {
                   ),
                   fit: BoxFit.cover,
                   height: 100,
-                  width: 500,
+                  width: 250,
                 ),
               ),
               padding: EdgeInsets.symmetric(horizontal: 30),
@@ -68,15 +74,15 @@ class Menu extends StatelessWidget {
                 onTap: () {},
                 child: Ink.image(
                   image: const AssetImage(
-                    'img/3TAAL.png',
+                    'img/2TS.png',
                   ),
                   fit: BoxFit.cover,
                   height: 100,
-                  width: 500,
+                  width: 250,
                 ),
               ),
               padding: EdgeInsets.symmetric(horizontal: 30),
-              margin: EdgeInsets.symmetric(vertical: 30),
+              margin: EdgeInsets.symmetric(vertical: 25),
             ),
 
             Container(
@@ -85,16 +91,34 @@ class Menu extends StatelessWidget {
                 onTap: () {},
                 child: Ink.image(
                   image: const AssetImage(
-                    'img/4LS.png',
+                    'img/2TS.png',
                   ),
                   fit: BoxFit.cover,
                   height: 100,
-                  width: 500,
+                  width: 250,
                 ),
               ),
               padding: EdgeInsets.symmetric(horizontal: 30),
               margin: EdgeInsets.symmetric(vertical: 10),
             ),
+
+            Container(
+              child: InkWell(
+                splashColor: Colors.green,
+                onTap: () {},
+                child: Ink.image(
+                  image: const AssetImage(
+                    'img/2TS.png',
+                  ),
+                  fit: BoxFit.cover,
+                  height: 100,
+                  width: 250,
+                ),
+              ),
+              padding: EdgeInsets.symmetric(horizontal: 30),
+              margin: EdgeInsets.symmetric(vertical: 25),
+            ),
+
           ],
         ),
       ),
