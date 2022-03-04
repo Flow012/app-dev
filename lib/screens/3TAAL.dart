@@ -1,16 +1,16 @@
 import 'package:dislearn/color.dart';
+import 'package:dislearn/screens/MenuScreen.dart';
 import 'package:dislearn/theme.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:dislearn/screens/MenuScreen.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: TD(),
+    home: TE(),
   ));
 }
 
-class TD extends StatelessWidget {
+class TE extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
@@ -34,21 +34,22 @@ class _HomePageState extends State<HomePage> {
     final screenWidth = MediaQuery.of(context).size.width;
     final statusSize = MediaQuery.of(context).padding.top;
 
+
     return Scaffold(
       floatingActionButtonLocation: FloatingActionButtonLocation.startTop,
       floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          Navigator.push(
-              context,
-              MaterialPageRoute(
-                  builder: (context) => const Menu()));
-        },
+          onPressed: () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => const Menu()));
+          },
         backgroundColor: Color(0xff238054),
         mini: true,
         child: Icon(
           Icons.arrow_back,
+          ),
         ),
-      ),
       body: Container(
         child: Stack(
           children: [
@@ -56,7 +57,7 @@ class _HomePageState extends State<HomePage> {
               top: 0,
               child: Container(
                 child: Image.asset(
-                  "img/T4TD.png",
+                  "img/T3TE.png",
                   fit: BoxFit.cover,
                 ),
                 height: screenHeight * 0.3 + 40,
@@ -98,9 +99,9 @@ class _HomePageState extends State<HomePage> {
                                 child: const Text(
                                   "DESCRIPTION",
                                   style: TextStyle(
-                                    fontSize: 20,
-                                    fontFamily: 'BeVietNamPro-B',
-                                    letterSpacing: 1.3
+                                      fontSize: 20,
+                                      fontFamily: 'BeVietNamPro-B',
+                                      letterSpacing: 1.3
                                   ),
                                 ),
 
@@ -110,9 +111,9 @@ class _HomePageState extends State<HomePage> {
 
                               Container(
                                 child: const Divider(
-                                  thickness: 6,
-                                  height: 2,
-                                  color: Color(0xff238054)
+                                    thickness: 6,
+                                    height: 2,
+                                    color: Color(0xff238054)
                                 ),
                                 width: 110,
                                 margin: EdgeInsets.only(left: 20),
@@ -127,13 +128,13 @@ class _HomePageState extends State<HomePage> {
                             borderRadius: BorderRadius.only(
                                 topLeft: Radius.circular(50),
                                 topRight: Radius.circular(50)),
-                           // color: Colors.red
+                            // color: Colors.red
                           ),
                         ),
 
 
 
-                      /*
+                        /*
 
                        //CONTENT SECTION PART
 
@@ -161,19 +162,21 @@ class _HomePageState extends State<HomePage> {
                                       child: Container(
 
                                         child: const Text(
-                                          "It was a powerful and catastrophic typhoon that struck the Philippines. Odette became the first Category 5-equivalent"
-                                              " super typhoon to develop in the month of December since Nock-ten in 2016, and the third Category 5 super typhoon recorded "
-                                              "in the South China Sea, following Pamela in 1954 and Rammasun in 2014.As typhoon pounded the Philippines, "
-                                              "heavy rainfall, strong and gusty winds impacted several areas around the storm's path. Many areas across the Visayas and Mindanao lost "
-                                              "electricity with several provinces and areas being deprived further of communication services. At least 1,371 are injured, with 80 missing. "
-                                              "Many public and private facilities were also harmed as a result of the storm.",
-                                          style: TextStyle(fontSize: 12.5, fontFamily: 'BeVietnamPro-L', letterSpacing: 1.3),
+                                          "Taal Volcano began to erupt on January 12, 2020, when a phreatomagmatic eruption from its main crater spewed ashes "
+                                              "over Calabarzon,Metro Manila, and some parts of Central Luzon and Ilocos Region, resulting in the suspension of school classes, "
+                                              "work schedules, and flights in the area. The Philippine Institute of Volcanology and Seismology (PHIVOLCS) subsequently issued an Alert Level 4, indicating "
+                                              "that a hazardous explosive eruption is possible within hours to days. "
+                                              "\n"
+                                              "\n"
+                                              "According to the Manila Bulletin, people either perished because they refused to follow the evacuation order or decided to return to their homes, "
+                                              "or died in the evacuation centers of heart attacks caused by anxiety and has also caused damage to agriculture.",
+                                          style: TextStyle(fontSize: 12, fontFamily: 'BeVietnamPro-L', letterSpacing: 1.3),
                                         ),
                                         padding: const EdgeInsets.symmetric(
                                             horizontal: 50, vertical: 30),
                                         height: screenHeight / 2 + 35 ,
 
-                                        // color: Colors.green,
+                                         // color: Colors.green,
 
                                       ),
                                     ),
@@ -182,7 +185,7 @@ class _HomePageState extends State<HomePage> {
                               ),
                             ),
 
-                          // color: Colors.blue,
+                            // color: Colors.blue,
 
                           ),
                         ),
