@@ -29,24 +29,6 @@ class Menu extends StatelessWidget {
         body: SingleChildScrollView(
           physics: BouncingScrollPhysics(),
 
-<<<<<<< HEAD
-            Container(
-              child: InkWell(
-                splashColor: Colors.green,
-                onTap: () {},
-                child: Ink.image(
-                  image: const AssetImage(
-                    'img/2TS.png',
-                  ),
-                  fit: BoxFit.cover,
-                  height: 100,
-                  width: 250,
-                ),
-                ),
-              padding: const EdgeInsets.symmetric(horizontal: 30),
-              margin: const EdgeInsets.symmetric(vertical: 10),
-            ),
-=======
           child: Column(
             children: [
               Container(
@@ -59,7 +41,6 @@ class Menu extends StatelessWidget {
                 ),
                 margin: const EdgeInsets.only(top: 10),
               ),
->>>>>>> upstream/main
 
               const Divider(
                 height: 16,
