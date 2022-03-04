@@ -1,16 +1,16 @@
 import 'package:dislearn/color.dart';
-import 'package:dislearn/screens/MenuScreen.dart';
 import 'package:dislearn/theme.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:dislearn/screens/MenuScreen.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: BE(),
+    home: TS(),
   ));
 }
 
-class BE extends StatelessWidget {
+class TS extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
@@ -34,7 +34,6 @@ class _HomePageState extends State<HomePage> {
     final screenWidth = MediaQuery.of(context).size.width;
     final statusSize = MediaQuery.of(context).padding.top;
 
-
     return Scaffold(
       floatingActionButtonLocation: FloatingActionButtonLocation.startTop,
       floatingActionButton: FloatingActionButton(
@@ -57,7 +56,7 @@ class _HomePageState extends State<HomePage> {
               top: 0,
               child: Container(
                 child: Image.asset(
-                  "img/T1BE(1).png",
+                  "img/T2TS.png",
                   fit: BoxFit.cover,
                 ),
                 height: screenHeight * 0.3 + 40,
@@ -162,11 +161,26 @@ class _HomePageState extends State<HomePage> {
                                       child: Container(
 
                                         child: const Text(
-                                          "15 October 2013, a powerful earthquake measuring 7.2 on the Richter Scale shook the Philippines. The epicenter was located in the island province of Bohol in Central Visayas but was felt as far as Southern Mindanao."
+                                          "Widespread devastation from the storm surge in Tacloban\n"
+                                              "City (especially in San Jose),"
+                                              "destroyed many buildings,"
+                                              "knocked down trees, and piled up cars,The low-lying areas"
+                                              "on the eastern side of Tacloban city were hardest hit,with"
+                                              "some areas completely washed away.Flooding also extended"
+                                              "for 1km inland on the east coast of the province."
                                               "\n"
                                               "\n"
-                                              "The earthquake affected over 1.2 million people, 222 people died (195 in Bohol), 976 were injured and eight people missing. Over 79,000 structures including homes, roads, churches, schools and public buildings were damaged, of which 14,500 were totally destroyed, resulting in over 340,000 displaced people.",
-                                          style: TextStyle(fontSize: 12, fontFamily: 'BeVietnamPro-L', letterSpacing: 1.3),
+                                              "According to the city administrator, roughly 90 percent of the \n"
+                                              "city had been destroyed. Journalists on the ground have\n"
+                                              "described the devastation as, off the scale, and \n"
+                                              "apocalyptic.Most families in Samar and Leyte lost some\n"
+                                              "family members or relatives; families came in from outlying \n"
+                                              "provinces looking for relatives, especially children, who may\n"
+                                              "have been washed away.Many residents were caught off-\n"
+                                              "guard by the fast-rising waters and subsequently drowned or \n"
+                                              "were injured.\n",
+
+                                          style: TextStyle(fontSize: 12.5, fontFamily: 'BeVietnamPro-L', letterSpacing: 1.3),
                                         ),
                                         padding: const EdgeInsets.symmetric(
                                             horizontal: 50, vertical: 30),

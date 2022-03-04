@@ -59,7 +59,7 @@ class Menu extends StatelessWidget {
                   splashColor: Colors.green,
                   onTap: () {
                     Navigator.push(
-                        context, MaterialPageRoute(builder: (context) => Home()));
+                        context, MaterialPageRoute(builder: (context) => BE()));
                   },
                   child: Ink.image(
                     image: const AssetImage(
