@@ -1,4 +1,5 @@
 
+import 'package:dislearn/screens/T1BE.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 void main() {
@@ -13,10 +14,12 @@ class Earthquake extends StatelessWidget {
       home: Container(
         child: Scaffold(
           appBar: AppBar(
-            title: Image.asset(
-              "img/LOGO 1.png",
-              fit: BoxFit.contain,
-              height: 40,
+            title: Container(
+              child: Image.asset(
+                "img/LOGO 1.png",
+                fit: BoxFit.contain,
+                height: 40,
+              ),
             ),
             toolbarHeight: 60,
             flexibleSpace: Container(
@@ -26,13 +29,35 @@ class Earthquake extends StatelessWidget {
                         stops: [0.5, 1],
                         begin: Alignment.bottomLeft,
                         end: Alignment.topRight))),
-
+              leading:
+              Container(
+                height: 50,
+                width: 100,
+                // color: Colors.red,
+                decoration: BoxDecoration(
+                  // color: Colors.blue,
+                  borderRadius: BorderRadius.circular(100),
+                ),
+                child: IconButton(
+                  icon: const Icon(
+                      Icons.arrow_back,
+                  ),
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => BE()));
+                  },
+                ),
+              )
           ),
            body:
-           Image(image: AssetImage('img/SPR/SPFE.png'),
-             width: 450,
-             height: 600,
+           Container(
+             child: Image(image: AssetImage('img/SPR/SPFE.png'),
+               width: 450,
+               height: 600,
         ),
+           ),
       ),
       ),
       );
