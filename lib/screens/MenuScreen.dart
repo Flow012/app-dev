@@ -1,3 +1,5 @@
+import 'package:dislearn/screens/3TAAL.dart';
+import 'package:dislearn/screens/4TD.dart';
 import 'package:dislearn/screens/T1BE.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -95,7 +97,12 @@ class Menu extends StatelessWidget {
               Container(
                 child: InkWell(
                   splashColor: Colors.green,
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => TE()));
+                  },
                   child: Ink.image(
                     image: const AssetImage(
                       'img/3TAAL.png',
@@ -112,10 +119,15 @@ class Menu extends StatelessWidget {
               Container(
                 child: InkWell(
                   splashColor: Colors.green,
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => TD()));
+                  },
                   child: Ink.image(
                     image: const AssetImage(
-                      'img/2TS.png',
+                      'img/5OD.png',
                     ),
                     fit: BoxFit.cover,
                     height: 100,
@@ -132,7 +144,7 @@ class Menu extends StatelessWidget {
                   onTap: () {},
                   child: Ink.image(
                     image: const AssetImage(
-                      'img/2TS.png',
+                      'img/4LS.png',
                     ),
                     fit: BoxFit.cover,
                     height: 100,
