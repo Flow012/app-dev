@@ -1,4 +1,8 @@
+import 'package:dislearn/screens/2TS.dart';
+import 'package:dislearn/screens/3TAAL.dart';
+import 'package:dislearn/screens/4TD.dart';
 import 'package:dislearn/screens/T1BE.dart';
+import 'package:dislearn/screens/T5CE.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -56,7 +60,7 @@ class Menu extends StatelessWidget {
                   splashColor: Colors.green,
                   onTap: () {
                     Navigator.push(
-                        context, MaterialPageRoute(builder: (context) => Home()));
+                        context, MaterialPageRoute(builder: (context) => BE()));
                   },
                   child: Ink.image(
                     image: const AssetImage(
@@ -76,7 +80,12 @@ class Menu extends StatelessWidget {
               Container(
                 child: InkWell(
                   splashColor: Colors.green,
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => TS()));
+                  },
                   child: Ink.image(
                     image: const AssetImage(
                       'img/2TS.png',
@@ -95,7 +104,12 @@ class Menu extends StatelessWidget {
               Container(
                 child: InkWell(
                   splashColor: Colors.green,
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => TE()));
+                  },
                   child: Ink.image(
                     image: const AssetImage(
                       'img/3TAAL.png',
@@ -112,10 +126,15 @@ class Menu extends StatelessWidget {
               Container(
                 child: InkWell(
                   splashColor: Colors.green,
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => TD()));
+                  },
                   child: Ink.image(
                     image: const AssetImage(
-                      'img/2TS.png',
+                      'img/5OD.png',
                     ),
                     fit: BoxFit.cover,
                     height: 100,
@@ -129,10 +148,15 @@ class Menu extends StatelessWidget {
               Container(
                 child: InkWell(
                   splashColor: Colors.green,
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => CE()));
+                  },
                   child: Ink.image(
                     image: const AssetImage(
-                      'img/2TS.png',
+                      'img/4LS.png',
                     ),
                     fit: BoxFit.cover,
                     height: 100,

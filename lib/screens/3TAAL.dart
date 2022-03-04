@@ -6,11 +6,11 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: BE(),
+    home: TE(),
   ));
 }
 
-class BE extends StatelessWidget {
+class TE extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
@@ -38,18 +38,18 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       floatingActionButtonLocation: FloatingActionButtonLocation.startTop,
       floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          Navigator.push(
-              context,
-              MaterialPageRoute(
-                  builder: (context) => const Menu()));
-        },
+          onPressed: () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => const Menu()));
+          },
         backgroundColor: Color(0xff238054),
         mini: true,
         child: Icon(
           Icons.arrow_back,
+          ),
         ),
-      ),
       body: Container(
         child: Stack(
           children: [
@@ -57,7 +57,7 @@ class _HomePageState extends State<HomePage> {
               top: 0,
               child: Container(
                 child: Image.asset(
-                  "img/T1BE(1).png",
+                  "img/T3TE.png",
                   fit: BoxFit.cover,
                 ),
                 height: screenHeight * 0.3 + 40,
@@ -162,17 +162,21 @@ class _HomePageState extends State<HomePage> {
                                       child: Container(
 
                                         child: const Text(
-                                          "15 October 2013, a powerful earthquake measuring 7.2 on the Richter Scale shook the Philippines. The epicenter was located in the island province of Bohol in Central Visayas but was felt as far as Southern Mindanao."
+                                          "Taal Volcano began to erupt on January 12, 2020, when a phreatomagmatic eruption from its main crater spewed ashes "
+                                              "over Calabarzon,Metro Manila, and some parts of Central Luzon and Ilocos Region, resulting in the suspension of school classes, "
+                                              "work schedules, and flights in the area. The Philippine Institute of Volcanology and Seismology (PHIVOLCS) subsequently issued an Alert Level 4, indicating "
+                                              "that a hazardous explosive eruption is possible within hours to days. "
                                               "\n"
                                               "\n"
-                                              "The earthquake affected over 1.2 million people, 222 people died (195 in Bohol), 976 were injured and eight people missing. Over 79,000 structures including homes, roads, churches, schools and public buildings were damaged, of which 14,500 were totally destroyed, resulting in over 340,000 displaced people.",
+                                              "According to the Manila Bulletin, people either perished because they refused to follow the evacuation order or decided to return to their homes, "
+                                              "or died in the evacuation centers of heart attacks caused by anxiety and has also caused damage to agriculture.",
                                           style: TextStyle(fontSize: 12, fontFamily: 'BeVietnamPro-L', letterSpacing: 1.3),
                                         ),
                                         padding: const EdgeInsets.symmetric(
                                             horizontal: 50, vertical: 30),
                                         height: screenHeight / 2 + 35 ,
 
-                                        // color: Colors.green,
+                                         // color: Colors.green,
 
                                       ),
                                     ),

@@ -1,16 +1,16 @@
 import 'package:dislearn/color.dart';
-import 'package:dislearn/screens/MenuScreen.dart';
 import 'package:dislearn/theme.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:dislearn/screens/MenuScreen.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: BE(),
+    home: TD(),
   ));
 }
 
-class BE extends StatelessWidget {
+class TD extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
@@ -34,7 +34,6 @@ class _HomePageState extends State<HomePage> {
     final screenWidth = MediaQuery.of(context).size.width;
     final statusSize = MediaQuery.of(context).padding.top;
 
-
     return Scaffold(
       floatingActionButtonLocation: FloatingActionButtonLocation.startTop,
       floatingActionButton: FloatingActionButton(
@@ -57,7 +56,7 @@ class _HomePageState extends State<HomePage> {
               top: 0,
               child: Container(
                 child: Image.asset(
-                  "img/T1BE(1).png",
+                  "img/T4TD.png",
                   fit: BoxFit.cover,
                 ),
                 height: screenHeight * 0.3 + 40,
@@ -99,9 +98,9 @@ class _HomePageState extends State<HomePage> {
                                 child: const Text(
                                   "DESCRIPTION",
                                   style: TextStyle(
-                                      fontSize: 20,
-                                      fontFamily: 'BeVietNamPro-B',
-                                      letterSpacing: 1.3
+                                    fontSize: 20,
+                                    fontFamily: 'BeVietNamPro-B',
+                                    letterSpacing: 1.3
                                   ),
                                 ),
 
@@ -111,9 +110,9 @@ class _HomePageState extends State<HomePage> {
 
                               Container(
                                 child: const Divider(
-                                    thickness: 6,
-                                    height: 2,
-                                    color: Color(0xff238054)
+                                  thickness: 6,
+                                  height: 2,
+                                  color: Color(0xff238054)
                                 ),
                                 width: 110,
                                 margin: EdgeInsets.only(left: 20),
@@ -128,13 +127,13 @@ class _HomePageState extends State<HomePage> {
                             borderRadius: BorderRadius.only(
                                 topLeft: Radius.circular(50),
                                 topRight: Radius.circular(50)),
-                            // color: Colors.red
+                           // color: Colors.red
                           ),
                         ),
 
 
 
-                        /*
+                      /*
 
                        //CONTENT SECTION PART
 
@@ -162,11 +161,13 @@ class _HomePageState extends State<HomePage> {
                                       child: Container(
 
                                         child: const Text(
-                                          "15 October 2013, a powerful earthquake measuring 7.2 on the Richter Scale shook the Philippines. The epicenter was located in the island province of Bohol in Central Visayas but was felt as far as Southern Mindanao."
-                                              "\n"
-                                              "\n"
-                                              "The earthquake affected over 1.2 million people, 222 people died (195 in Bohol), 976 were injured and eight people missing. Over 79,000 structures including homes, roads, churches, schools and public buildings were damaged, of which 14,500 were totally destroyed, resulting in over 340,000 displaced people.",
-                                          style: TextStyle(fontSize: 12, fontFamily: 'BeVietnamPro-L', letterSpacing: 1.3),
+                                          "It was a powerful and catastrophic typhoon that struck the Philippines. Odette became the first Category 5-equivalent"
+                                              " super typhoon to develop in the month of December since Nock-ten in 2016, and the third Category 5 super typhoon recorded "
+                                              "in the South China Sea, following Pamela in 1954 and Rammasun in 2014.As typhoon pounded the Philippines, "
+                                              "heavy rainfall, strong and gusty winds impacted several areas around the storm's path. Many areas across the Visayas and Mindanao lost "
+                                              "electricity with several provinces and areas being deprived further of communication services. At least 1,371 are injured, with 80 missing. "
+                                              "Many public and private facilities were also harmed as a result of the storm.",
+                                          style: TextStyle(fontSize: 12.5, fontFamily: 'BeVietnamPro-L', letterSpacing: 1.3),
                                         ),
                                         padding: const EdgeInsets.symmetric(
                                             horizontal: 50, vertical: 30),
@@ -181,7 +182,7 @@ class _HomePageState extends State<HomePage> {
                               ),
                             ),
 
-                            // color: Colors.blue,
+                          // color: Colors.blue,
 
                           ),
                         ),

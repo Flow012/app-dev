@@ -6,11 +6,11 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: BE(),
+    home: CE(),
   ));
 }
 
-class BE extends StatelessWidget {
+class CE extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
@@ -57,7 +57,7 @@ class _HomePageState extends State<HomePage> {
               top: 0,
               child: Container(
                 child: Image.asset(
-                  "img/T1BE(1).png",
+                  "img/T5CE.png",
                   fit: BoxFit.cover,
                 ),
                 height: screenHeight * 0.3 + 40,
@@ -162,10 +162,13 @@ class _HomePageState extends State<HomePage> {
                                       child: Container(
 
                                         child: const Text(
-                                          "15 October 2013, a powerful earthquake measuring 7.2 on the Richter Scale shook the Philippines. The epicenter was located in the island province of Bohol in Central Visayas but was felt as far as Southern Mindanao."
+                                          "On April 22, 2011, around 3:00 am, a landslide occurred in Purok Side B, Sitio Panganason, Pantukan, Compostela Valley Province where a number of people died, "
+                                              "several houses and shanties were damaged and tunnels, ball mills and gold processing facilities were buried."
                                               "\n"
                                               "\n"
-                                              "The earthquake affected over 1.2 million people, 222 people died (195 in Bohol), 976 were injured and eight people missing. Over 79,000 structures including homes, roads, churches, schools and public buildings were damaged, of which 14,500 were totally destroyed, resulting in over 340,000 displaced people.",
+                                              "An investigation of the affected area as well as its vicinities was conducted. In that investigation, aside from finding out the causes and factors"
+                                              "involved in the Panganason landslide, it was also found out that Diat Uno in Napnapan has several tension cracks and active landslide. "
+                                              "Due to the small-scale mining in the area, it has caused a landslide that caused the death of at least 41 people.",
                                           style: TextStyle(fontSize: 12, fontFamily: 'BeVietnamPro-L', letterSpacing: 1.3),
                                         ),
                                         padding: const EdgeInsets.symmetric(
