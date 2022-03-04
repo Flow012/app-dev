@@ -1,9 +1,11 @@
-import 'package:dislearn/screens/T5CE.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:dislearn/screens/T5CE.dart';
+
 void main() {
   runApp(const LS());
 }
+
 class LS extends StatelessWidget {
   const LS({Key? key}) : super(key: key);
 
@@ -28,8 +30,7 @@ class LS extends StatelessWidget {
                           stops: [0.5, 1],
                           begin: Alignment.bottomLeft,
                           end: Alignment.topRight))),
-              leading:
-              Container(
+              leading: Container(
                 height: 50,
                 width: 100,
                 // color: Colors.red,
@@ -43,18 +44,15 @@ class LS extends StatelessWidget {
                   ),
                   onPressed: () {
                     Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => CE()));
+                        context, MaterialPageRoute(builder: (context) => CE()));
                   },
                 ),
-              )
-          ),
-          body:
-          Container(
-            child: Image(image: AssetImage('img/SPR/SPFL.png'),
+              )),
+          body: Container(
+            child: Image(
+              image: AssetImage('img/SPR/SPFL.png'),
               width: 450,
-              height: 600,
+              height: 700,
             ),
           ),
         ),
