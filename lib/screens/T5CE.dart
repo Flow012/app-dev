@@ -1,4 +1,5 @@
 import 'package:dislearn/color.dart';
+import 'package:dislearn/safetyprotocols/LS.dart';
 import 'package:dislearn/screens/MenuScreen.dart';
 import 'package:dislearn/theme.dart';
 import 'package:flutter/cupertino.dart';
@@ -44,6 +45,7 @@ class _HomePageState extends State<HomePage> {
             height: 35,
             width: 35,
             child: FloatingActionButton(
+              heroTag: 'pull',
               onPressed: () {
                 Navigator.push(
                     context,
@@ -62,7 +64,13 @@ class _HomePageState extends State<HomePage> {
             height: 35,
             width: 35,
             child: FloatingActionButton(
-              onPressed: () {},
+              heroTag: 'push',
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => LS()));
+              },
               backgroundColor: Color(0xff238054),
               mini: true,
               child: Icon(
