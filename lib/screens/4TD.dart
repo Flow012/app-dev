@@ -36,18 +36,42 @@ class _HomePageState extends State<HomePage> {
 
     return Scaffold(
       floatingActionButtonLocation: FloatingActionButtonLocation.startTop,
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          Navigator.push(
-              context,
-              MaterialPageRoute(
-                  builder: (context) => const Menu()));
-        },
-        backgroundColor: Color(0xff238054),
-        mini: true,
-        child: Icon(
-          Icons.arrow_back,
-        ),
+      floatingActionButton: Row(
+        children: [
+          Container(
+            margin: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+            height: 35,
+            width: 35,
+            child: FloatingActionButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const Menu()));
+              },
+              backgroundColor: Color(0xff238054),
+              mini: true,
+              child: Icon(
+                Icons.arrow_back,
+                size: 18,
+              ),
+            ),
+          ),
+          Container(
+            height: 35,
+            width: 35,
+            child: FloatingActionButton(
+              onPressed: () {},
+              backgroundColor: Color(0xff238054),
+              mini: true,
+              child: Icon(
+                Icons.arrow_forward,
+                size: 18,
+              ),
+
+            ),
+          )
+        ],
       ),
       body: Container(
         child: Stack(
@@ -167,7 +191,7 @@ class _HomePageState extends State<HomePage> {
                                               "heavy rainfall, strong and gusty winds impacted several areas around the storm's path. Many areas across the Visayas and Mindanao lost "
                                               "electricity with several provinces and areas being deprived further of communication services. At least 1,371 are injured, with 80 missing. "
                                               "Many public and private facilities were also harmed as a result of the storm.",
-                                          style: TextStyle(fontSize: 12.5, fontFamily: 'BeVietnamPro-L', letterSpacing: 1.3),
+                                          style: TextStyle(fontSize: 12, fontFamily: 'BeVietnamPro-L', letterSpacing: 1.3),
                                         ),
                                         padding: const EdgeInsets.symmetric(
                                             horizontal: 50, vertical: 30),

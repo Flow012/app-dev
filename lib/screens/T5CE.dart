@@ -37,18 +37,42 @@ class _HomePageState extends State<HomePage> {
 
     return Scaffold(
       floatingActionButtonLocation: FloatingActionButtonLocation.startTop,
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          Navigator.push(
-              context,
-              MaterialPageRoute(
-                  builder: (context) => const Menu()));
-        },
-        backgroundColor: Color(0xff238054),
-        mini: true,
-        child: Icon(
-          Icons.arrow_back,
-        ),
+      floatingActionButton: Row(
+        children: [
+          Container(
+            margin: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+            height: 35,
+            width: 35,
+            child: FloatingActionButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const Menu()));
+              },
+              backgroundColor: Color(0xff238054),
+              mini: true,
+              child: Icon(
+                Icons.arrow_back,
+                size: 18,
+              ),
+            ),
+          ),
+          Container(
+            height: 35,
+            width: 35,
+            child: FloatingActionButton(
+              onPressed: () {},
+              backgroundColor: Color(0xff238054),
+              mini: true,
+              child: Icon(
+                Icons.arrow_forward,
+                size: 18,
+              ),
+
+            ),
+          )
+        ],
       ),
       body: Container(
         child: Stack(

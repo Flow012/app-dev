@@ -36,18 +36,42 @@ class _HomePageState extends State<HomePage> {
 
     return Scaffold(
       floatingActionButtonLocation: FloatingActionButtonLocation.startTop,
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          Navigator.push(
-              context,
-              MaterialPageRoute(
-                  builder: (context) => const Menu()));
-        },
-        backgroundColor: Color(0xff238054),
-        mini: true,
-        child: Icon(
-          Icons.arrow_back,
-        ),
+      floatingActionButton: Row(
+        children: [
+          Container(
+            margin: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+            height: 35,
+            width: 35,
+            child: FloatingActionButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const Menu()));
+              },
+              backgroundColor: Color(0xff238054),
+              mini: true,
+              child: Icon(
+                Icons.arrow_back,
+                size: 18,
+              ),
+            ),
+          ),
+          Container(
+            height: 35,
+            width: 35,
+            child: FloatingActionButton(
+              onPressed: () {},
+              backgroundColor: Color(0xff238054),
+              mini: true,
+              child: Icon(
+                Icons.arrow_forward,
+                size: 18,
+              ),
+
+            ),
+          )
+        ],
       ),
       body: Container(
         child: Stack(
@@ -161,26 +185,24 @@ class _HomePageState extends State<HomePage> {
                                       child: Container(
 
                                         child: const Text(
-                                          "Widespread devastation from the storm surge in Tacloban\n"
+                                          "Widespread devastation from the storm surge in Tacloban "
                                               "City (especially in San Jose),"
-                                              "destroyed many buildings,"
-                                              "knocked down trees, and piled up cars,The low-lying areas"
+                                              " destroyed many buildings, "
+                                              "knocked down trees, and piled up cars, the low-lying areas"
                                               "on the eastern side of Tacloban city were hardest hit,with"
-                                              "some areas completely washed away.Flooding also extended"
+                                              "some areas completely washed away. Flooding also extended"
                                               "for 1km inland on the east coast of the province."
                                               "\n"
                                               "\n"
-                                              "According to the city administrator, roughly 90 percent of the \n"
-                                              "city had been destroyed. Journalists on the ground have\n"
-                                              "described the devastation as, off the scale, and \n"
-                                              "apocalyptic.Most families in Samar and Leyte lost some\n"
-                                              "family members or relatives; families came in from outlying \n"
-                                              "provinces looking for relatives, especially children, who may\n"
-                                              "have been washed away.Many residents were caught off-\n"
-                                              "guard by the fast-rising waters and subsequently drowned or \n"
-                                              "were injured.\n",
+                                              "According to the city administrator, roughly 90 percent of the "
+                                              "city had been destroyed. Journalists on the ground have "
+                                              "described the devastation as, off the scale, and "
+                                              "apocalyptic. Most families in Samar and Leyte lost some "
+                                              "family members or relatives; families came in from outlying "
+                                              "provinces looking for relatives, especially children, who may "
+                                              "have been washed away.",
 
-                                          style: TextStyle(fontSize: 12.5, fontFamily: 'BeVietnamPro-L', letterSpacing: 1.3),
+                                          style: TextStyle(fontSize: 12, fontFamily: 'BeVietnamPro-L', letterSpacing: 1.3),
                                         ),
                                         padding: const EdgeInsets.symmetric(
                                             horizontal: 50, vertical: 30),
