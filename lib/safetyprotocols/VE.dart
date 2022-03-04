@@ -1,13 +1,14 @@
+import 'package:dislearn/screens/3TAAL.dart';
+import 'package:dislearn/screens/T1BE.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:dislearn/screens/T5CE.dart';
+
 
 void main() {
-  runApp(const LS());
+  runApp(const VE());
 }
-
-class LS extends StatelessWidget {
-  const LS({Key? key}) : super(key: key);
+class VE extends StatelessWidget {
+  const VE({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +31,8 @@ class LS extends StatelessWidget {
                           stops: [0.5, 1],
                           begin: Alignment.bottomLeft,
                           end: Alignment.topRight))),
-              leading: Container(
+              leading:
+              Container(
                 height: 50,
                 width: 100,
                 // color: Colors.red,
@@ -44,15 +46,18 @@ class LS extends StatelessWidget {
                   ),
                   onPressed: () {
                     Navigator.push(
-                        context, MaterialPageRoute(builder: (context) => CE()));
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => TE()));
                   },
                 ),
-              )),
-          body: Container(
-            child: Image(
-              image: AssetImage('img/SPR/SPFL.png'),
+              )
+          ),
+          body:
+          Container(
+            child: Image(image: AssetImage('img/SPR/SPRVE.png'),
               width: 450,
-              height: 700,
+              height: 600,
             ),
           ),
         ),
@@ -69,7 +74,7 @@ class LS extends StatelessWidget {
 // return Scaffold(
 // body: SafeArea(
 // child: Container(
-//   child: Image.asset('img/SPR/SPFL.png'),
+//   child: Image.asset('img/SPR/SPFE.png'),
 // ),
 //),
 // );
