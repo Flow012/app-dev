@@ -167,7 +167,7 @@ class _HomePageState extends State<HomePage> {
                                               "heavy rainfall, strong and gusty winds impacted several areas around the storm's path. Many areas across the Visayas and Mindanao lost "
                                               "electricity with several provinces and areas being deprived further of communication services. At least 1,371 are injured, with 80 missing. "
                                               "Many public and private facilities were also harmed as a result of the storm.",
-                                          style: TextStyle(fontSize: 12.5, fontFamily: 'BeVietnamPro-L', letterSpacing: 1.3),
+                                          style: TextStyle(fontSize: 12, fontFamily: 'BeVietnamPro-L', letterSpacing: 1.3),
                                         ),
                                         padding: const EdgeInsets.symmetric(
                                             horizontal: 50, vertical: 30),
