@@ -1,7 +1,7 @@
-
+import 'package:dislearn/color.dart';
+import 'package:dislearn/theme.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -34,66 +34,156 @@ class _HomePageState extends State<HomePage> {
     final statusSize = MediaQuery.of(context).padding.top;
 
     return Scaffold(
-        body: Container(
-          child: Stack(
-            children: [
-              Positioned(
-                top: 0,
-
-                child: Container(
-                  child: Image.asset(
-                    "img/T4TD.png",
-                    fit: BoxFit.cover,
-                  ),
-                  height: screenHeight * 0.3 + 40,
-                  width: screenWidth * 1,
-                  padding: const EdgeInsets.symmetric(vertical: 10),
-
+      body: Container(
+        child: Stack(
+          children: [
+            Positioned(
+              top: 0,
+              child: Container(
+                child: Image.asset(
+                  "img/T4TD.png",
+                  fit: BoxFit.cover,
                 ),
-
+                height: screenHeight * 0.3 + 40,
+                width: screenWidth * 1,
+                padding: const EdgeInsets.symmetric(vertical: 10),
               ),
-              Positioned(
-                bottom: 0,
-                child: Container(
-                  decoration: const BoxDecoration(
-                      borderRadius: BorderRadius.only(topLeft: Radius.circular(50), topRight: Radius.circular(50)),
-                      color: Colors.greenAccent
+            ),
+            Positioned(
+              bottom: 0,
+              child: SizedBox(
+                child: ConstrainedBox(
+                  constraints: BoxConstraints(
+                    maxWidth: screenWidth,
+                    maxHeight: screenHeight,
                   ),
-                  height: screenHeight * 0.8 - 80,
-                  width: screenWidth * 1,
 
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      Container(
-                        margin: EdgeInsets.symmetric(horizontal: 15, vertical: 20),
-                        padding: EdgeInsets.symmetric(horizontal: 30, vertical: 25),
-                        height: 100,
-                        width: screenWidth,
-                        color: Colors.red,
+                  child: Container(
+                    decoration: BoxDecoration(
+                        borderRadius: const BorderRadius.only(
+                            topLeft: Radius.circular(50),
+                            topRight: Radius.circular(50)),
+                        color: AppTheme.colors.white),
+                    height: screenHeight * 0.9 - 140,
+                    width: screenWidth,
+                    child: Stack(
+                      children: [
 
-                        child: Text(
-                            "DESCRIPTION"
-                        ),
-                      ),
-                      Expanded(
-                        child: Container(
+                        /*
 
-                          height: 400,
+                        TITLE DESCRITION
+
+                        */
+
+                        Container(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Container(
+                                child: const Text(
+                                  "DESCRIPTION",
+                                  style: TextStyle(
+                                    fontSize: 20,
+                                    fontFamily: 'BeVietNamPro-B',
+                                    letterSpacing: 1.3
+                                  ),
+                                ),
+
+                                width: 250,
+                                padding: EdgeInsets.only(top: 50, left: 30, bottom: 10),
+                              ),
+
+                              Container(
+                                child: const Divider(
+                                  thickness: 6,
+                                  height: 2,
+                                  color: Color(0xff238054)
+                                ),
+                                width: 110,
+                                margin: EdgeInsets.only(left: 20),
+                              )
+                            ],
+                          ),
                           width: screenWidth,
-                          color: Colors.red,
-                        ),
-                      ),
-                    ],
-                  ),
+                          height: 100,
 
+                          decoration: const BoxDecoration(
+
+                            borderRadius: BorderRadius.only(
+                                topLeft: Radius.circular(50),
+                                topRight: Radius.circular(50)),
+                          ),
+                        ),
+
+
+
+                      /*
+
+                       //CONTENT SECTION PART
+
+                      */
+
+
+                        Positioned(
+                          bottom: 0,
+                          child: Container(
+                            child: ConstrainedBox(
+                              constraints: BoxConstraints(
+                                maxHeight: screenHeight / 2 + 100,
+                                maxWidth: screenWidth,
+                              ),
+                              child: Stack(
+                                clipBehavior: Clip.hardEdge,
+                                children: [
+                                  Positioned(
+                                    top: 0,
+                                    child: ConstrainedBox(
+                                      constraints: BoxConstraints(
+                                        maxHeight: screenHeight,
+                                        maxWidth: screenWidth,
+                                      ),
+                                      child: Container(
+
+                                        child: const Text(
+                                          "15 October 2013, a powerful earthquake measuring 7.2 on the Richter Scale shook"
+                                          "the Philippines. The epicenter was located in the island province\n"
+                                          "of Bohol in Central Visayas but was felt as far as Southern Mindanao.\n"
+                                              "\n"
+                                              "\n"
+                                              "The earthquake affected over 1.2 million people, 222 people died (195 in Bohol),\n"
+                                              "976 were injured and eight people missing. Over 79,000 structures including homes,"
+                                              "roads, churches, schools and public buildings were damaged, of which 14,500 were totally \n"
+                                              "destroyed, resulting in over 340,000 displaced people.",
+                                          style: TextStyle(fontSize: 15, fontFamily: 'BeVietnamPro-L', letterSpacing: 1.3),
+                                        ),
+                                        padding: const EdgeInsets.symmetric(
+                                            horizontal: 50, vertical: 30),
+                                        height: screenHeight,
+
+                                       // color: Colors.green,
+
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+
+                          //color: Colors.blue,
+
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
                 ),
               ),
-            ],
-          ),
-          height: (screenHeight * 1),
-          width: screenWidth,
+            ),
+          ],
         ),
+        height: screenHeight,
+        width: screenWidth,
+      ),
     );
   }
 }
