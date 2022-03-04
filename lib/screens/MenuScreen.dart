@@ -55,11 +55,11 @@ class Menu extends StatelessWidget {
                   ),
                   fit: BoxFit.cover,
                   height: 100,
-                  width: 500,
+                  width: 250,
                 ),
-              ),
-              padding: EdgeInsets.symmetric(horizontal: 30),
-              margin: EdgeInsets.symmetric(vertical: 10),
+                ),
+              padding: const EdgeInsets.symmetric(horizontal: 30),
+              margin: const EdgeInsets.symmetric(vertical: 10),
             ),
 
             Container(
