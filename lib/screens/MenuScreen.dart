@@ -1,3 +1,4 @@
+import 'package:dislearn/screens/2TS.dart';
 import 'package:dislearn/screens/3TAAL.dart';
 import 'package:dislearn/screens/4TD.dart';
 import 'package:dislearn/screens/T1BE.dart';
@@ -79,7 +80,12 @@ class Menu extends StatelessWidget {
               Container(
                 child: InkWell(
                   splashColor: Colors.green,
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => TS()));
+                  },
                   child: Ink.image(
                     image: const AssetImage(
                       'img/2TS.png',
