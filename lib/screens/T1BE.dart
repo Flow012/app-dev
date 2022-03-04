@@ -44,7 +44,6 @@ class Home extends StatelessWidget {
                child: Container(
                  decoration: BoxDecoration(
                    color: Colors.white,
-
                  ),
                ),
              )
