@@ -34,6 +34,16 @@ class _HomePageState extends State<HomePage> {
     final statusSize = MediaQuery.of(context).padding.top;
 
     return Scaffold(
+        floatingActionButtonLocation: FloatingActionButtonLocation.startTop,
+        floatingActionButton: FloatingActionButton(
+        onPressed: () {
+      Navigator.push(
+          context,
+          MaterialPageRoute(
+              builder: (context) => const Menu()));
+    },
+    backgroundColor: Color(0xff238054),
+    mini: true,
       body: Container(
         child: Stack(
           children: [
