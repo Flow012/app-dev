@@ -1,6 +1,7 @@
 import 'package:dislearn/color.dart';
 import 'package:dislearn/theme.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:dislearn/safetyprotocols/SPFT.dart';
 import 'package:flutter/material.dart';
 import 'package:dislearn/screens/MenuScreen.dart';
 
@@ -61,7 +62,12 @@ class _HomePageState extends State<HomePage> {
             height: 35,
             width: 35,
             child: FloatingActionButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const Typhoon ()));
+              },
               backgroundColor: Color(0xff238054),
               mini: true,
               child: Icon(
