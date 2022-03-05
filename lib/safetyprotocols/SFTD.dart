@@ -1,3 +1,4 @@
+import 'package:dislearn/screens/2TS.dart';
 import 'package:dislearn/screens/4TD.dart';
 import 'package:dislearn/screens/T5CE.dart';
 import 'package:flutter/cupertino.dart';
@@ -46,7 +47,7 @@ class Tacloban extends StatelessWidget {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => TD()));
+                            builder: (context) => TS()));
                   },
                 ),
               )
