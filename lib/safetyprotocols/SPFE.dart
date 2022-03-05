@@ -64,18 +64,3 @@ class Earthquake extends StatelessWidget {
   }
 }
 
- //class Content extends StatelessWidget {
-   //const Content({Key? key}) : super(key: key);
-
-  // @override
-   //Widget build(BuildContext context) {
-    // return Scaffold(
-      // body: SafeArea(
-      // child: Container(
-      //   child: Image.asset('img/SPR/SPFE.png'),
-      // ),
-       //),
-    // );
-  // }
- //}
- //mage(image: AssetImage('img/SPR/SPFL.png'),
