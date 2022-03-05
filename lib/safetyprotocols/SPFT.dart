@@ -1,12 +1,11 @@
 import 'package:dislearn/screens/4TD.dart';
-import 'package:dislearn/screens/T5CE.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 void main() {
-  runApp(const Tacloban());
+  runApp(const Typhoon ());
 }
-class Tacloban extends StatelessWidget {
-  const Tacloban ({Key? key}) : super(key: key);
+class Typhoon extends StatelessWidget {
+  const Typhoon ({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -53,9 +52,9 @@ class Tacloban extends StatelessWidget {
           ),
           body:
           Container(
-            child: Image(image: AssetImage('img/SPR/SPTD.png'),
+            child: Image(image: AssetImage('img/SPR/SPRTS.png'),
               width: 450,
-              height: 600,
+              height: 700,
             ),
           ),
         ),
@@ -64,18 +63,3 @@ class Tacloban extends StatelessWidget {
   }
 }
 
-//class Content extends StatelessWidget {
-//const Content({Key? key}) : super(key: key);
-
-// @override
-//Widget build(BuildContext context) {
-// return Scaffold(
-// body: SafeArea(
-// child: Container(
-//   child: Image.asset('img/SPR/SPFL.png'),
-// ),
-//),
-// );
-// }
-//}
-//mage(image: AssetImage('img/SPR/SPFL.png'),
