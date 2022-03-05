@@ -1,4 +1,5 @@
 import 'package:dislearn/color.dart';
+import 'package:dislearn/safetyprotocols/VE.dart';
 import 'package:dislearn/screens/MenuScreen.dart';
 import 'package:dislearn/theme.dart';
 import 'package:flutter/cupertino.dart';
@@ -62,7 +63,12 @@ class _HomePageState extends State<HomePage> {
             height: 35,
             width: 35,
             child: FloatingActionButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => VE()));
+              },
               backgroundColor: Color(0xff238054),
               mini: true,
               child: Icon(
