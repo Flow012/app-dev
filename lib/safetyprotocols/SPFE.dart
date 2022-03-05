@@ -55,7 +55,7 @@ class Earthquake extends StatelessWidget {
            Container(
              child: Image(image: AssetImage('img/SPR/SPFE.png'),
                width: 450,
-               height: 600,
+               height: 700,
         ),
            ),
       ),
