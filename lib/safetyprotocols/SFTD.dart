@@ -56,7 +56,7 @@ class Tacloban extends StatelessWidget {
           Container(
             child: Image(image: AssetImage('img/SPR/SPTD.png'),
               width: 450,
-              height: 600,
+              height: 700,
             ),
           ),
         ),
@@ -64,19 +64,3 @@ class Tacloban extends StatelessWidget {
     );
   }
 }
-
-//class Content extends StatelessWidget {
-//const Content({Key? key}) : super(key: key);
-
-// @override
-//Widget build(BuildContext context) {
-// return Scaffold(
-// body: SafeArea(
-// child: Container(
-//   child: Image.asset('img/SPR/SPFL.png'),
-// ),
-//),
-// );
-// }
-//}
-//mage(image: AssetImage('img/SPR/SPFL.png'),
