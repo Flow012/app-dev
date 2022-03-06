@@ -28,11 +28,9 @@ class MyApp extends StatelessWidget {
                   ),
                   Container(
                     child: Text(
-                      "This application will inform them  "
-                      "about how devastating and impactful "
-                      "disaster can be;\nit gives an idea that"
-                      " we should always be prepared if a natural disaster occurs. This application"
-                      " doesn't teach what are and\nwhat is but raises awareness about\nnatural disasters.",
+                      "This application will inform users about the impact of disasters and how devastating they can be. "
+                          "It also raises awareness about natural disasters. "
+                          "We should always be prepared if a natural disaster occurs. ",
                       textAlign: TextAlign.left,
                       style: TextStyle(
                           color: AppTheme.colors.white,
